@@ -163,7 +163,7 @@ Button interpret_go;
                                            public void onClick(View v) {
                                                if (mediaPlayer.isPlaying()) {
                                                    mediaPlayer.pause();
-                                               mediaPlayer.setVolume(0,0);
+                                                   mediaPlayer.setVolume(0,0);
                                                }
                                            }
                                        }
@@ -216,7 +216,7 @@ int iter_language=0;
                 case 0:
                     //Use a Value animator to animate alpha reappear the hebrew text of
                     //Have Create an initial toast explaining the the hebrew text is the most original form of the text.
-                    interpret_go.setVisibility(View.INVISIBLE);
+                    interpret_go.setVisibility(View.VISIBLE);
                     language.setVisibility(View.VISIBLE);
                     language.setText("Language:Hebrew");
 
