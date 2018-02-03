@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/backdrop_qanda8"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="89dp">
+
+    <LinearLayout
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/skip_button">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/black_overlay">
+
+            <ImageButton
+                android:id="@+id/back_button_lesson"
+                android:layout_width="60dp"
+                android:layout_height="64dp"
+                android:background="@color/black_overlay"
+                app:srcCompat="@android:drawable/ic_media_previous" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/graph_wave_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sine_wave" />
+
+        <FrameLayout
+            android:id="@+id/frame_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/continue_button"
+                android:layout_width="60dp"
+                android:layout_height="64dp"
+                android:background="@color/black_overlay"
+                app:srcCompat="@android:drawable/ic_menu_slideshow" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/black_overlay"
+        android:text="GOTO PART 3 (APPLICATION)"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintLeft_toRightOf="@+id/back_button_activity"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back_button_activity" />
+
+    <Button
+        android:id="@+id/back_button_activity"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:background="@color/black_overlay"
+        android:text="BACK"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorAccent"
+        android:text="Part 2"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/holo_blue_bright"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skip_button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basics of Sound Synthesis and How it can be used to model Concepts/Ideas"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        app:layout_constraintLeft_toLeftOf="@+id/scrollView3"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Sound_1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Sound_2"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Sound_3"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Sound_4"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        app:layout_constraintLeft_toLeftOf="@+id/play"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/play">
+
+        <TextView
+            android:id="@+id/Discussion_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="303dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@+id/radioGroup"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <FrameLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageButton
+                android:id="@+id/temp_play_button"
+                android:layout_width="68dp"
+                android:layout_height="64dp"
+                android:background="@android:color/holo_orange_light"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/stop_play"
+            android:layout_width="68dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            app:srcCompat="@android:drawable/ic_media_pause"
+            tools:layout_editor_absoluteX="273dp"
+            tools:layout_editor_absoluteY="633dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        style="@android:style/Widget.Holo.Light.ScrollView"
+        android:layout_width="550dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-10dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarThumbVertical="?android:attr/fastScrollThumbDrawable"
+        android:textAlignment="center"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/Discussion_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:elevation="1dp"
+            android:text="@string/text88" />
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

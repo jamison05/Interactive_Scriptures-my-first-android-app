@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@+id/selected"
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/v1genesis_1_2anim1" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim2" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim3" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim4" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim5" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim4" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim3" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim2" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim1" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim1" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim2" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim3" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim4" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim5" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim4" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim3" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim2" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim1" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim1" android:duration="100" />
+    <item android:drawable="@drawable/v1genesis_1_2anim2" android:duration="100" />
+    <item android:drawable="@drawable/v1genesis_1_2anim3" android:duration="100" />
+    <item android:drawable="@drawable/v1genesis_1_2anim4" android:duration="100" />
+    <item android:drawable="@drawable/v1genesis_1_2anim5" android:duration="100" />
+    <item android:drawable="@drawable/v1genesis_1_2anim4" android:duration="100" />
+    <item android:drawable="@drawable/v1genesis_1_2anim3" android:duration="100" />
+    <item android:drawable="@drawable/v1genesis_1_2anim2" android:duration="100" />
+    <item android:drawable="@drawable/v1genesis_1_2anim1" android:duration="100" />
+    <item android:drawable="@drawable/v1genesis_1_2anim1" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim2" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim3" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim4" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim5" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim4" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim3" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim2" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim1" android:duration="175" />
+    <item android:drawable="@drawable/v1genesis_1_2anim1" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim2" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim3" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim4" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim5" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim4" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim3" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim2" android:duration="150" />
+    <item android:drawable="@drawable/v1genesis_1_2anim1" android:duration="150" />
+
+</animation-list>

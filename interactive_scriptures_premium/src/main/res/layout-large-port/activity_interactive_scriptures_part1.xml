@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backdrop4"
+    tools:context="drjpreludes.interactive_scriptures_premium.Interactive_scriptures_part1"
+    tools:layout_editor_absoluteY="89dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <Button
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/black_overlay"
+        android:text="START PART 2"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:id="@+id/gridLayout">
+
+    </GridLayout>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="277dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="276dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="693dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="692dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageButton
+        android:id="@+id/mute_button"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:background="@color/black_overlay"
+        app:layout_constraintRight_toLeftOf="@+id/interpret_written"
+        app:layout_constraintTop_toTopOf="@+id/skip_button"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode"
+        app:layout_constraintLeft_toRightOf="@+id/skip_button"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.973"
+        android:layout_marginStart="8dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="499dp"
+        android:layout_height="360dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintLeft_toLeftOf="@+id/linearLayout"
+        app:layout_constraintRight_toRightOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageView
+            android:id="@+id/backdrop_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:background="@drawable/gold_backdrop"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="245dp" />
+
+        <TextView
+            android:id="@+id/written_language"
+            android:layout_width="297dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="45dp"
+            android:alpha="1"
+            android:text="Language: Hebrew"
+            android:textSize="18sp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="713dp" />
+
+        <TextView
+            android:id="@+id/scrip_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="325dp"
+            android:layout_marginTop="300dp"
+            android:alpha="1"
+            android:elevation="1dp"
+            android:text="Genesis 1:1"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="651dp" />
+
+        <ImageView
+            android:id="@+id/hebrew_text_animated"
+            android:layout_width="425dp"
+            android:layout_height="206dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="90dp"
+            android:alpha="1"
+            android:background="@drawable/gen1v1p1"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="562dp" />
+
+        <ImageView
+            android:id="@+id/english_text_animated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:alpha="0"
+            android:background="@drawable/v1genesis_1_2_pt3_anim4"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="680dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="585dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black_overlay"
+        android:text="Part 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:id="@+id/scrollView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/interpret_written"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:background="@color/colorAccent"
+        android:text="Developer's Thoughts"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="@+id/mute_button"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/textView12"
+        android:layout_marginEnd="8dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="575dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/sound_directions"
+                android:layout_width="192dp"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:text="Press: to make  a sound"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="91dp"
+                tools:layout_editor_absoluteY="172dp" />
+
+            <ImageButton
+                android:id="@+id/animated_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/obj1_anim1"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="@+id/back_button_activity"
+                app:layout_constraintRight_toLeftOf="@+id/back_button_activity"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="6dp">
+
+            <ImageButton
+                android:id="@+id/back_button_activity"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:visibility="visible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hebrew_text_animated"
+                app:srcCompat="@drawable/continue_button2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="95dp"
+                android:text="Continue"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="614dp"
+                tools:layout_editor_absoluteY="187dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        android:layout_marginLeft="91dp"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        ads:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="12dp"
+        ads:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+        ads:layout_constraintHorizontal_bias="0.27">
+    </com.google.android.gms.ads.AdView>
+</android.support.constraint.ConstraintLayout>
